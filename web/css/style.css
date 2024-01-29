@@ -1,144 +1,193 @@
 .content {
-    display: grid;
-    justify-items: center;
-    gap: 60px;
-    max-width: 1000px;
-    margin: 60px auto auto;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 60px auto auto;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .description {
-    display: grid;
-    gap: 20px;
-    align-content: center;
-    justify-items: end;
-    text-align: right;
-    padding: 40px;
-    background-color: #fff;
-    position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
 }
 .description > a {
-    background-color: #ee2211;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: white;
+  background-color: #ee2211;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
 }
 .description > a:hover {
-    background-color: #900;
-    transition: 0.3s;
+  background-color: #900;
+  transition: 0.3s;
 }
 .description::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background-color: #ee2211;
-    position: absolute;
-    top: 30px;
-    right: -30px;
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #ee2211;
+  position: absolute;
+  top: 30px;
+  right: -30px;
 }
 .subtitle > p {
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: #c6c6c6;
-    text-align: right;
-    font-weight: 500;
-    padding: 40px;
-    align-self: center;
-    background-image: url('../img/onda.svg');
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  text-align: right;
+  font-weight: 500;
+  padding: 40px;
+  align-self: center;
+  background-image: url("../img/onda.svg");
 }
 .vantagens {
-    background-color: #fff;
-    padding: 40px;
+  background-color: #fff;
+  padding: 40px;
 }
 .vantagens-item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
 }
 .vantagens-item:hover {
-    border-left: 4px solid #ee2211;
+  border-left: 4px solid #ee2211;
 }
 .vantagens-item > p {
-    grid-column: 2;
+  grid-column: 2;
 }
 .vantagens-item:nth-child(odd) {
-    background: #f7f7f7;
+  background: #f7f7f7;
 }
 body {
-    margin: 0;
-    background-color: #f7f7f7;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
 }
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-nav {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
+nav > ul {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 header {
-    display: grid;
-    justify-items: center;
-    gap: 60px;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
 }
-h2, p, h3 {
-    margin: 0;
+h2,
+p,
+h3 {
+  margin: 0;
 }
 nav > a {
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 500;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 nav > ul > li {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 nav > ul > li:hover {
-    border-color: #ee2211;
-    transition: 0.4s;
+  border-color: #ee2211;
+  transition: 0.4s;
 }
 
 p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 footer {
-    width: 100%;
-    padding: 40px;
-    box-sizing: border-box;
-    text-align: center;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 li {
-    background-color: white;
-    border-radius: 4px;
+  background-color: white;
+  border-radius: 4px;
 }
 li > a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+    .subtitle, .vantagens {
+        grid-column: 1/ -1;
+    }
+    .subtitle > p {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .vantagens {
+        padding: 10px;
+    }
+    .description {
+        justify-items: start;
+        text-align: left;
+    }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    position: relative;
+  }
+  .description::after {
+    position: absolute;
+    transform: rotate(90deg);
+    right: 30px;
+    top: -7px;
+  }
+  .description > p {
+    font-size: 1rem;
+  }
+  .subtitle > p {
     text-align: center;
+    font-size: 2.5rem;
+  }
+  .image {
+    grid-row: 1;
+  }
+}
+@media(max-width: 350px) {
+    .subtitle {
+        font-size: 1rem;
+    }
 }
